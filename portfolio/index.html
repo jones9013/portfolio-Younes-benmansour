@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./style.scss" />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <!-- Kits for for font-awesome and devicon dev -->
@@ -26,111 +26,114 @@
 
       <!-- end -->
       <!-- nav for the nav bar -->
-      <nav>
+      <nav class="home-navbar">
         <ul>
-          <li><a href="Home">Home</a></li>
-          <li><a href="About">About</a></li>
-          <li><a href="Skills">Skills</a></li>
-          <li><a href="Projects">Projects</a></li>
-          <li><a href="Contact">Contact</a></li>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#Contact">Contact</a></li>
         </ul>
       </nav>
       <!-- my Name -->
-      <h1>Younes Benmansour</h1>
-      <p>I'm Front end developer</p>
+      <div class="home-content">
+        <h1>Younes Benmansour</h1>
+        <p class="message-effect" id="message-effect">
+          Designer & Frontend Developer.
+        </p>
+      </div>
     </header>
     <!-- End of Header -->
 
     <main>
       <!-- section for about me -->
-      <section id="About">
-        <h2>About me</h2>
-        <div class="image-about-me">
-          <img src="./images/img-about.jpg" alt="img-about" />
+      <section class="About" id="About">
+        <div class="flex-about-section wrapper">
+          <h2>About me</h2>
+          <div class="image-about-me">
+            <img src="./images/img-about.jpg" alt="img-about" />
+          </div>
+          <h3>I'm Younes Benmansour</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+            expedita voluptate eos nesciunt pariatur harum id libero omnis,
+            ratione doloribus doloremque, dicta similique quidem! Facere
+            accusantium expedita voluptatum architecto aspernatur. Quibusdam rem
+            quasi vitae nobis eaque, omnis, inventore aliquam maxime labore
+            veniam doloribus voluptate odit! Sequi consequatur cupiditate
+            debitis eaque quibusdam fugiat incidunt porro similique? Perferendis
+            qui magni quaerat quibusdam? Excepturi, repellat quod saepe
+            cupiditate distinctio quia ad! Deleniti aut cumque optio, quidem
+            suscipit provident minima nam quo reprehenderit perspiciatis
+            assumenda nisi culpa fugit, consequatur ab, nulla at voluptatibus
+            eius!
+          </p>
+          <button class="btn-cv">Download my CV</button>
         </div>
-        <h3>Younes Benmansour</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-          expedita voluptate eos nesciunt pariatur harum id libero omnis,
-          ratione doloribus doloremque, dicta similique quidem! Facere
-          accusantium expedita voluptatum architecto aspernatur. Quibusdam rem
-          quasi vitae nobis eaque, omnis, inventore aliquam maxime labore veniam
-          doloribus voluptate odit! Sequi consequatur cupiditate debitis eaque
-          quibusdam fugiat incidunt porro similique? Perferendis qui magni
-          quaerat quibusdam? Excepturi, repellat quod saepe cupiditate
-          distinctio quia ad! Deleniti aut cumque optio, quidem suscipit
-          provident minima nam quo reprehenderit perspiciatis assumenda nisi
-          culpa fugit, consequatur ab, nulla at voluptatibus eius!
-        </p>
-        <button>Download my CV</button>
       </section>
       <!-- End of section of about me -->
       <!-- section for skills -->
-      <section id="Skills">
+      <section class="skills wrapper" id="Skills">
         <h2>My Skills</h2>
         <!-- icons for skills -->
-        <ul>
-          <li>
-            <a href=""
-              ><i class="fa-brands fa-html5" style="color: #1f2151"></i
-            ></a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href=""><i class="fa-brands fa-css3-alt"></i></a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href=""><i class="fa-brands fa-sass"></i></a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href=""><i class="fa-brands fa-js"></i></a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href=""><i class="fa-brands fa-react"></i></a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href=""><i class="fa-brands fa-github"></i></a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="">
-              <i class="devicon-firebase-plain-wordmark colored"></i>
-            </a>
-          </li>
-        </ul>
-        <ul>
-          <li><a href="">Cmder</a></li>
-        </ul>
+        <div class="skills-flex">
+          <ul>
+            <li>
+              <a href=""><i class="fa-brands fa-html5"></i></a>
+            </li>
+
+            <li>
+              <a href=""><i class="fa-brands fa-css3-alt"></i></a>
+            </li>
+
+            <li>
+              <a href=""><i class="fa-brands fa-sass"></i></a>
+            </li>
+
+            <li>
+              <a href=""><i class="fa-brands fa-js"></i></a>
+            </li>
+
+            <li>
+              <a href=""><i class="fa-brands fa-react"></i></a>
+            </li>
+
+            <li>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </li>
+
+            <li>
+              <a href="">
+                <i class="devicon-firebase-plain-wordmark colored"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href=""><i>Cmder</i></a>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- End of section of Skills -->
       <!-- section of projects -->
-      <section id="Projects">
-        <div class="projects-container">
-          <div class="project-1">
+      <section class="projects" id="Projects">
+        <h2>My Projects</h2>
+        <div class="wrapper projects-container">
+          <div class="img-project project-1">
             <a href=""
               ><img
                 src="./images/portfolio/port-1.jpg"
                 alt="screenshot of project1"
             /></a>
           </div>
-          <div class="project-2">
+          <div class="img-project project-2">
             <a href=""
               ><img
                 src="./images/portfolio/port-2.jpg"
                 alt="screenshot of project2"
             /></a>
           </div>
-          <div class="project-3">
+          <div class="img-project project-3">
             <a href=""
               ><img
                 src="./images/portfolio/port-3.jpg"
@@ -143,11 +146,12 @@
     </main>
     <!-- footer -->
     <footer>
+      <h2>Get in Touch</h2>
       <!-- form -->
-      <div class="from">
+      <div class="wrapper">
         <form action="">
           <div class="form-informations">
-            <div class="row1">
+            <div class="row">
               <label for="name">Name</label>
               <input
                 type="text"
@@ -156,7 +160,7 @@
                 placeholder="your name..."
               />
             </div>
-            <div class="row2">
+            <div class="row">
               <label for="email">Email adress</label>
               <input
                 type="email"
@@ -165,7 +169,7 @@
                 placeholder="your email..."
               />
             </div>
-            <div class="row3">
+            <div class="row">
               <label for="subject">Subject</label>
               <input
                 type="text"
@@ -174,7 +178,7 @@
                 placeholder="your subject..."
               />
             </div>
-            <div class="row4">
+            <div class="row-basis">
               <label for="message">Message</label>
               <textarea
                 name="message"
@@ -183,10 +187,10 @@
                 rows="10"
                 placeholder="your message..."
               ></textarea>
+              <button class="btn-message">Send message</button>
             </div>
           </div>
         </form>
-        <button class="send-message">Send message</button>
       </div>
       <!-- End of the form -->
       <!-- contact icons -->
