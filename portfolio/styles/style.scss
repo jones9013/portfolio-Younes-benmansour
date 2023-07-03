@@ -288,6 +288,16 @@ header .home-navbar ul li {
   font-weight: 600;
 }
 
+// end of styling nav bar
+// styling nav bar hover
+header .home-navbar ul li a:hover {
+  color: blue;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: red;
+  transition: 0.1s ease-in-out;
+}
+
 // styling header content
 
 header .home-content {
@@ -366,6 +376,11 @@ section.About .flex-about-section .btn-cv {
   text-transform: uppercase;
   text-align: center;
   font-size: 18px;
+}
+// adding hover for btn message
+
+section.About .flex-about-section .btn-cv:hover {
+  box-shadow: 10px 10px 10px rgb(38, 137, 242);
 }
 // --------------------------End of About section -------------------------------------
 
@@ -503,11 +518,47 @@ footer .btn-message {
   font-size: 18px;
   margin: 0 auto;
 }
+// adding hover for the button
+footer .btn-message:hover {
+  box-shadow: 10px 10px 10px rgb(38, 137, 242);
+}
 
 // contact icons
+footer .contact-icons {
+  margin-top: 50px;
+}
 footer .contact-icons ul {
-  width: 100%;
+  width: 50%;
   display: flex;
-  justify-content: center;
-  //   transform: translate(-50%);
+  justify-content: space-evenly;
+  transform: translate(40%);
+  padding: 10px;
+  margin: 20px;
+}
+// styling the color of the icons
+footer .contact-icons .fa-brands.fa-linkedin {
+  color: #3498b9;
+  font-size: 33px;
+}
+footer .contact-icons .fa-brands.fa-twitter {
+  color: #2eb1eb;
+  font-size: 33px;
+}
+footer .contact-icons .fa-brands.fa-github {
+  color: #181717;
+  font-size: 33px;
+}
+footer .contact-icons .fa-solid.fa-envelope {
+  color: #d14836;
+  font-size: 33px;
+}
+// end of styling contact icons
+
+footer .copy-right {
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  margin: 20px 0px 0px;
+  background-color: black;
+  color: white;
 }
