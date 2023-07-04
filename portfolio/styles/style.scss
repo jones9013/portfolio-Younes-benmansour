@@ -259,7 +259,7 @@ header {
     0,
     0.6
   ); // i have to check the background color is over-riding by th img
-  background-image: url(../images/bg-home-1.jpg);
+  background-image: url(../images/bg-home-3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -313,10 +313,19 @@ header .home-content h1 {
   font-size: 32px;
 }
 
-header .home-content p {
+header .home-content .message-effect {
   // need more style  after I setup js
-  font-size: 20px;
+  font-size: 60px;
   color: black;
+}
+span {
+  animation: blinker 1s linear infinite;
+}
+// create animation
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 
 // End of the header styles

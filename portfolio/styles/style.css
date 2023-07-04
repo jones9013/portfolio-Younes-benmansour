@@ -288,7 +288,7 @@ h4 {
 
 header {
   background-color: rgba(0, 0, 0, 0.6);
-  background-image: url(../images/bg-home-1.jpg);
+  background-image: url(../images/bg-home-3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -338,11 +338,20 @@ header .home-content h1 {
   font-size: 32px;
 }
 
-header .home-content p {
-  font-size: 20px;
+header .home-content .message-effect {
+  font-size: 60px;
   color: black;
 }
 
+span {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
 main section.About {
   background-color: rgb(248, 249, 250);
   height: auto;
