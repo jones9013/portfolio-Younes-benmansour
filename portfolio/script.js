@@ -17,15 +17,15 @@ window.addEventListener(`load`, typeWriter);
 
 // ---------scrolling animation----------
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    console.log(entry);
-    if (entry.isIntersecting) {
-      entry.target.classList.add(`show`);
-    } else {
-      entry.target.classList.remove(`show`);
-    }
-  });
-});
-const fromLeft = document.querySelectorAll(`.from-left`);
-const fromRight = document.querySelectorAll(`.from-right`);
+// const observer = new IntersectionObserver((entries) => {
+//   entries.forEach((entry) => {
+//     console.log(entry);
+//     if (entry.isIntersecting) {
+//       entry.target.classList.add(`show`);
+//     } else {
+//       entry.target.classList.remove(`show`);
+//     }
+//   });
+// });
+// const fromLeft = document.querySelectorAll(`.from-left`);
+// const fromRight = document.querySelectorAll(`.from-right`);
