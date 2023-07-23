@@ -288,6 +288,14 @@ header .home-navbar ul li {
   font-weight: 600;
 }
 
+header .home-navbar .mobile-menu {
+  display: none;
+  margin-right: 20px;
+  font-size: 30px;
+  float: right;
+  line-height: 50px;
+}
+
 // end of styling nav bar
 // styling nav bar hover
 header .home-navbar ul li a:hover {
@@ -574,19 +582,75 @@ footer .copy-right {
 
 // ---------------------End of footer ---------------------------
 
-// ---------Adding some styles for js scrolling animation----------
-// .from-left {
-//   opacity: 0;
-//   transition: all 1s;
-//   transform: translateX(-100%);
-// }
-// .from-right {
-//   opacity: 0;
-//   transition: all 1s;
-//   transform: translateX(100%);
-// }
+// --------------------Media Querry ----------------------------
 
-// .show {
-//   opacity: 1;
-//   transform: translateX(0);
-// }
+// media querry max width 1025 px
+@media (max-width: 1025px) {
+  header .home-content .message-effect {
+    font-size: 40px;
+  }
+  .skills .skills-flex ul li a i {
+    font-size: 70px;
+  }
+}
+
+// mobile version
+
+@media (max-width: 765px) {
+  header .home-navbar {
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+  }
+  header .home-navbar .mobile-menu {
+    display: block;
+  }
+
+  header .home-content h1 {
+    font-size: 20px;
+  }
+  header .home-content .message-effect {
+    font-size: 23px;
+  }
+  section.About .flex-about-section {
+    width: 90%;
+    padding: 10px 20px;
+  }
+  section.About .flex-about-section h3 {
+    font-size: 16px;
+  }
+  section.About .flex-about-section p {
+    font-size: 16px;
+  }
+  section.About .flex-about-section .btn-cv {
+    width: 150px;
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .skills .skills-flex ul li a i {
+    font-size: 55px;
+  }
+
+  .projects .projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects-container .img-project {
+    width: 80%;
+  }
+
+  footer .btn-message {
+    width: 150px;
+    height: 45px;
+    font-size: 14px;
+  }
+
+  footer .contact-icons ul li {
+    margin-right: 35px;
+  }
+  footer .copy-right {
+    font-size: 10px;
+  }
+}
