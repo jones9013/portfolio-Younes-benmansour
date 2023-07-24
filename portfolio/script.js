@@ -14,3 +14,13 @@ const typeWriter = () => {
 };
 window.addEventListener(`load`, typeWriter);
 //---------------------End of typewriter--------------------------------------------------
+
+// ----------------js for nav bar ----------------------------
+const mobileMenuIcon = document.getElementById(`mobile-menu-icon`);
+const ulMenu = document.getElementById(`ul-menu`);
+const homeContent = document.getElementById(`home-content`);
+
+mobileMenuIcon.addEventListener(`click`, () => {
+  ulMenu.classList.toggle("show");
+  homeContent.style.display = `none`;
+});
