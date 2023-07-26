@@ -268,9 +268,15 @@ header {
 }
 
 header .home-navbar {
-  background-color: white;
   width: 100%;
-  height: 08vh;
+  height: 10vh;
+}
+
+// adding class fixed to make it with js
+header .home-navbar.fixed {
+  position: fixed;
+  background-color: white;
+  z-index: 1;
 }
 
 header .home-navbar ul {
@@ -303,7 +309,7 @@ header .home-navbar .mobile-menu {
 // end of styling nav bar
 // styling nav bar hover
 header .home-navbar ul li a:hover {
-  color: blue;
+  color: rgb(0, 0, 255);
   text-decoration: underline;
   text-decoration-thickness: 3px;
   text-decoration-color: red;
@@ -628,6 +634,10 @@ footer .copy-right {
   #ul-menu.show {
     transform: translateX(0);
   }
+  #ul-menu.show li:hover {
+    background-color: blue;
+    color: white;
+  }
   .home-navbar > ul:nth-child(1) > li:nth-child(1) {
     margin-top: 85px;
   }
@@ -637,9 +647,13 @@ footer .copy-right {
 
   header .home-content h1 {
     font-size: 20px;
+    position: absolute;
+    top: 20%;
   }
   header .home-content .message-effect {
     font-size: 23px;
+    position: absolute;
+    top: 25%;
   }
   section.About .flex-about-section {
     width: 90%;

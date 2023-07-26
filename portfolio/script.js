@@ -1,7 +1,18 @@
+const homeNavBar = document.querySelector(`.home-navbar`);
 const msgHomeTypeWriter = document.getElementById(`message-effect`);
 const msgHomeTypeWriterArray = [` Designer & Frontend Developer.`];
 let msgPosition = 0;
 const msgSpeed = 100;
+
+// making position fixed to my nav bar when I scroll down ---
+window.addEventListener(`scroll`, () => {
+  const scrollY = window.scrollY;
+  if (window.innerWidth > 765) {
+    homeNavBar.classList.add(`fixed`);
+  } else {
+    homeNavBar.classList.remove(`fixed`);
+  }
+});
 
 //------------------ function for the typewriter in the hone page--------------------------
 const typeWriter = () => {
