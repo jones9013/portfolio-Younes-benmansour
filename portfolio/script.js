@@ -1,6 +1,9 @@
 const homeNavBar = document.querySelector(`.home-navbar`);
 const msgHomeTypeWriter = document.getElementById(`message-effect`);
 const msgHomeTypeWriterArray = [` Designer & Frontend Developer.`];
+const scrollFades = document.querySelectorAll(`.scroll-fade`);
+let windowHeight = window.innerHeight;
+let scrollFadePoint = 150;
 let msgPosition = 0;
 const msgSpeed = 100;
 
@@ -12,6 +15,16 @@ window.addEventListener(`scroll`, () => {
   } else {
     homeNavBar.classList.remove(`fixed`);
   }
+
+  //------------------------- scroll fade effect------------------------------------
+  scrollFades.forEach((scrollFade) => {
+    const scrollFadeTop = scrollFade.getBoundingClientRect().top;
+    if (scrollFadeTop < windowHeight - scrollFadePoint) {
+      scrollFade.classList.add(`active`);
+    } else {
+      scrollFade.classList.remove(`active`);
+    }
+  });
 });
 
 //------------------ function for the typewriter in the hone page--------------------------

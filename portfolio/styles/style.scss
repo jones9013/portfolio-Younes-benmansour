@@ -336,15 +336,15 @@ header .home-content .message-effect {
   font-size: 60px;
   color: black;
 }
-span {
-  animation: blinker 1s linear infinite;
-}
-// create animation
-@keyframes blinker {
-  50% {
-    opacity: 0;
-  }
-}
+// span {
+//   animation: blinker 1s linear infinite;
+// }
+// // create animation
+// @keyframes blinker {
+//   50% {
+//     opacity: 0;
+//   }
+// }
 
 // End of the header styles
 
@@ -592,6 +592,18 @@ footer .copy-right {
 
 // ---------------------End of footer ---------------------------
 
+//-----------------------Scroll fade effects --------------------
+.scroll-fade {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.scroll-fade.active {
+  transform: translateY(0);
+  opacity: 1;
+}
 // --------------------Media Querry ----------------------------
 
 // media querry max width 1025 px
