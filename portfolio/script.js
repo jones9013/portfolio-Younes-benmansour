@@ -2,6 +2,7 @@ const homeNavBar = document.querySelector(`.home-navbar`);
 const msgHomeTypeWriter = document.getElementById(`message-effect`);
 const msgHomeTypeWriterArray = [` Designer & Frontend Developer.`];
 const scrollFades = document.querySelectorAll(`.scroll-fade`);
+
 let windowHeight = window.innerHeight;
 let scrollFadePoint = 150;
 let msgPosition = 0;
@@ -47,4 +48,21 @@ const homeContent = document.getElementById(`home-content`);
 mobileMenuIcon.addEventListener(`click`, () => {
   ulMenu.classList.toggle("show");
   homeContent.style.display = `none`;
+});
+
+// ------------------------toggle projects's descriptions ---------------
+
+function toggleProjectDescriptions(project) {
+  const projectDescription = project.querySelector(`.description`);
+  project.addEventListener(`mouseenter`, (event) => {
+    projectDescription.style.display = `block`;
+  });
+  project.addEventListener(`mouseleave`, (event) => {
+    projectDescription.style.display = `none`;
+  });
+}
+
+const projects = document.querySelectorAll(`.img-project`);
+projects.forEach((project) => {
+  toggleProjectDescriptions(project);
 });
