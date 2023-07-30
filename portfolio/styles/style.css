@@ -302,7 +302,7 @@ header {
 
 header .home-navbar {
   width: 100%;
-  height: 10vh;
+  height: 8vh;
 }
 
 header .home-navbar.fixed {
@@ -363,7 +363,7 @@ header .home-content h1 {
 
 header .home-content .message-effect {
   font-size: 60px;
-  color: white;
+  color: black;
   font-weight: 600;
 }
 
@@ -385,7 +385,7 @@ section.About .flex-about-section h2 {
   font-size: 24px;
   line-height: 1.2;
   color: black;
-  font-weight: 600;
+  font-weight: 800;
   text-decoration: underline;
   text-decoration-thickness: 3px;
   text-decoration-color: blue;
@@ -427,6 +427,11 @@ section.About .flex-about-section .btn-cv:hover {
 .skills {
   height: auto;
   padding: 20px;
+  background-image: url(../images/skills-image.jpeg);
+  background-position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-position: center;
+  background-size: cover;
 }
 
 .skills h2 {
@@ -459,22 +464,33 @@ section.About .flex-about-section .btn-cv:hover {
   font-size: 100px;
 }
 
+.skills .skills-flex ul li a i:hover {
+  transform: scale(2);
+}
+
+.projects {
+  background-color: rgb(106, 127, 249);
+}
+
 .projects h2 {
   text-align: center;
   text-transform: uppercase;
   font-size: 24px;
   line-height: 1.2;
-  color: black;
+  color: white;
   font-weight: 600;
   text-decoration: underline;
   text-decoration-thickness: 3px;
-  text-decoration-color: blue;
   margin-bottom: 60px;
+  margin: 0px 20px 20px 20px;
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
 
 .projects .projects-container {
   width: 100%;
   display: flex;
+  padding: 20px 40px 40px 40px;
 }
 
 .projects-container .img-project {
@@ -549,6 +565,7 @@ footer h2 {
   text-decoration-thickness: 3px;
   text-decoration-color: blue;
   padding: 40px 20px;
+  margin: 0;
 }
 
 footer form .form-informations {
@@ -667,6 +684,18 @@ footer .copy-right {
   .skills .skills-flex ul li a i {
     font-size: 70px;
   }
+  .projects .projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects-container .img-project {
+    width: 80%;
+  }
+  .projects .description p {
+    margin: 70px;
+    padding: 40px;
+  }
 }
 @media (max-width: 765px) {
   header {
@@ -696,7 +725,7 @@ footer .copy-right {
     transform: translateX(0);
   }
   #ul-menu.show li:hover {
-    background-color: blue;
+    color: blue;
     color: white;
   }
   .home-navbar > ul:nth-child(1) > li:nth-child(1) {
